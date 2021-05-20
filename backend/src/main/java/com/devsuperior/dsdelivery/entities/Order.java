@@ -30,17 +30,14 @@ public class Order implements Serializable {
 	private OrderStatus status;
 
 	@ManyToMany
-	@JoinTable(name = "tb_order_product", 
-		joinColumns = @JoinColumn(name = "order_id"), 
-		inverseJoinColumns = @JoinColumn(name = "product_id"))
+	@JoinTable(name = "tb_order_product", joinColumns = @JoinColumn(name = "order_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
 	private Set<Product> products = new HashSet<>();
 
 	public Order() {
 
 	}
 
-	public Order(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status,
-			Set<Product> products) {
+	public Order(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status) {
 		super();
 		this.id = id;
 		this.address = address;
@@ -48,7 +45,6 @@ public class Order implements Serializable {
 		this.longitude = longitude;
 		this.moment = moment;
 		this.status = status;
-		this.products = products;
 	}
 
 	public Long getId() {

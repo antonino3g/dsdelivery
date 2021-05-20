@@ -27,7 +27,7 @@ public class OrderDTO implements Serializable {
 	}
 
 	public OrderDTO(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status) {
-		super();
+
 		this.id = id;
 		this.address = address;
 		this.latitude = latitude;
@@ -44,8 +44,7 @@ public class OrderDTO implements Serializable {
 		longitude = entity.getLongitude();
 		moment = entity.getMoment();
 		status = entity.getStatus();
-		products = entity.getProducts().stream()
-				.map(x -> new ProductDTO(x)).collect(Collectors.toList());
+		products = entity.getProducts().stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
 	}
 
 	public Long getId() {
