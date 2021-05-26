@@ -21,5 +21,5 @@ Desenvolvimento de uma aplicacão de entrega de alimentos, o DSDelivery.
 
 # Diagrama de classes
 <p align="center">
-  <img src="https://i.ibb.co/r4JF435/Diagram-Class.png" alt="Diagram-Class" border="0">
+  <img src="https://i.ibb.co/r4JF435/Diagram-Class.png" alt="Diagram-Class" border="0" >
 </p>
