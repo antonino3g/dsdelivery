@@ -1,8 +1,8 @@
 # Sobre o projeto
 Desenvolvimento de uma aplicacão de entrega de alimentos, o DSDelivery.
- - API REST feita com Java Spring Boot.
- - Versão Web feito com ReactJS (pendente).
- - Versão Mobile feito com React Native (pendente).
+ - [x] API REST feita com Java Spring Boot.
+ - [ ] Versão Web feito com ReactJS <i>(building)</i>.
+ - [ ] Versão Mobile feito com React Native <i>(pendente)</i>.
 
 # Casos de uso
 
